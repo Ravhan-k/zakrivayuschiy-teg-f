@@ -4,8 +4,10 @@
 
 *,
 *::after,
-*::before {
+*::before,
+*:focus {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -35,6 +37,12 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 ul,
