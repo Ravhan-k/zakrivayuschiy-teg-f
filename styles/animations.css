@@ -71,6 +71,7 @@
 
 .like-icon .sparks {
   opacity: 0;
+  transition: fill linear 0.3s;
 }
 
 .like-icon .main-body {

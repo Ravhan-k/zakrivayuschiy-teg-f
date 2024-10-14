@@ -39,7 +39,6 @@
   background-color: var(--background-color);
   outline: 2px solid var(--accent-color);
   width: 100%;
-  height: 100%;
   max-width: 696px;
   padding: 134px 10px 28px 10px;
 }
@@ -149,7 +148,7 @@
   opacity: 0.5;
 }
 
-@supports ((-webkit-text-stroke: 0.7px var(--text-shadow))) {
+@supports ((-webkit-text-stroke: 1px var(--text-shadow))) {
   .image__text {
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: var(--text-shadow);
@@ -172,7 +171,7 @@
 .button__container {
   display: flex;
   justify-content: end;
-  margin: 0 25px 23px 0;
+  margin: 0 25px 27px 0;
   gap: 6px;
 }
 
@@ -183,10 +182,14 @@
   mix-blend-mode: difference;
 }
 
+.like-icon {
+  display: block;
+  padding-top: 2px;
+}
+
 .card__icon-button {
   padding: 0;
   transition: ease 0.3s;
-  margin-top: 2px;
 }
 
 .card__icon-button:focus {
@@ -195,22 +198,22 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  outline-offset: -3px;
 }
 
 .card__like-button {
   outline: 2px solid var(--accent-color);
   background-color: var(--background-color);
-  outline-offset: -3px;
   transition: all 0.5s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   width: 130px;
+  height: 38px;
+  padding: 0;
 }
 
 .card__like-button:focus-visible, .save__button:focus-visible  {
-  box-shadow: 2px 2px 0px 0px var(--accent-color);
+  box-shadow: 4px 4px 0 0 var(--accent-color);
 }
 
 .saturation {
@@ -329,7 +332,7 @@
 }
 
 .dialog__button:focus-visible {
-  box-shadow: 3px 3px 0px 0px var(--accent-color);
+  box-shadow: 4px 4px 0 0 var(--accent-color);
 }
 
 @media (max-width: 376px) {
@@ -345,31 +348,32 @@
     margin-left: 20px;
   }
 
+  .title {
+    padding: 4.5px 10px 4.5px 12px;
+  }
+
   .text,
   .span {
-    max-width: 346px;
-    padding: 0 0 0 25px;
+    max-width: 348px;
+    padding: 0 0 0 27px;
+  }
+
+  .text {
+    margin-bottom: 25px;
+  }
+
+  .image__container {
+    margin-bottom: 26px;
+  }
+
+  .button__container {
+    margin: 0 27px 25px 0;
   }
 
   .image__text {
     right: 14px;
   }
 
-  .image__container {
-    margin-bottom: 24px;
-  }
-
-  .card__like-button {
-    padding: 0 39.5px;
-    outline-offset: -4px;
-    
-  }
-
-  .card__icon-button {
-    padding: 0;
-    max-height: 38px;
-    margin: 2px 5px 0 0;
-  }
 
   .floppy {
     max-width: 28px;
