@@ -6,8 +6,9 @@
   --font-weight: 400;
   --background-color: #fff;
   --accent-color: #000;
-  --text-shadow: #fff;
+  --blend-color: #fff;
   --text-hover: #fff;
+  --text-shadow: #fff;
   --icon-color: #fff;
   --heart-color: #f00;
   --background-image: repeating-linear-gradient(

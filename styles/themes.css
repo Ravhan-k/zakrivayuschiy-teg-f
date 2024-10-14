@@ -6,14 +6,13 @@
 */
 
 :root.theme-light {
-  --font: "Inter-Variable";
-  --font-accent: "Press Start 2P";
   --font-weight-title: 700;
   --font-weight: 400;
   --background-color: #fff;
   --accent-color: #000;
-  --text-shadow: #fff;
+  --blend-color: #fff;
   --text-hover: #fff;
+  --text-shadow: #fff;
   --icon-color: #fff;
   --heart-color: #f00;
   --background-image: repeating-linear-gradient(
@@ -34,14 +33,13 @@
 }
 
 :root.theme-dark {
-  --font: "Inter-Variable";
-  --font-accent: "Press Start 2P";
   --font-weight-title: 785;
   --font-weight: 465;
   --background-color: #000;
   --accent-color: #00cc14;
-  --text-shadow: #00cc14;
+  --blend-color: #00cc14;
   --text-hover: #000;
+  --text-shadow: #000;
   --icon-color: #00cc14;
   --heart-color: #f00;
   --background-image: repeating-linear-gradient(
@@ -63,15 +61,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --font: "Inter-Variable";
-    --font-accent: "Press Start 2P";
     --font-weight-title: 785;
     --font-weight: 465;
     --background-color: #000;
     --accent-color: #00cc14;
-    --text-shadow: #00cc14;
+    --blend-color: #00cc14;
     --icon-color: #00cc14;
     --text-hover: #000;
+    --text-shadow: #000;
     --heart-color: #f00;
     --background-image: repeating-linear-gradient(
         90deg,
